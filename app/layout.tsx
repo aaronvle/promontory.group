@@ -13,12 +13,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Promontory Group — GTM Advisory",
+  title: "Promontory Group — RevOps & GTM Engineering",
   description:
-    "Strategic vantage for go-to-market. Promontory Group is a GTM consulting firm.",
+    "RevOps and GTM engineering for early-stage B2B SaaS. GTM strategy, fractional RevOps, and signal-driven outbound systems.",
   openGraph: {
-    title: "Promontory Group — GTM Advisory",
-    description: "Strategic vantage for go-to-market.",
+    title: "Promontory Group — RevOps & GTM Engineering",
+    description:
+      "RevOps and GTM engineering for early-stage B2B SaaS. We design the revenue system — then we build it.",
     type: "website",
     url: "https://promontory.group",
   },
