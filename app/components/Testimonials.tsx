@@ -1,25 +1,24 @@
 import Reveal from "./Reveal";
 
-// PLACEHOLDER — quote slots for champions at Seam, Ito.ai, and OpenLoop.
-// Do NOT ship real names with placeholder quotes; swap both together.
+// PLACEHOLDER — quote slots. Do not ship real names with placeholder quotes; swap both together.
 const TESTIMONIALS = [
   {
     quote:
       "Placeholder — testimonial pending. A short, specific quote about the outcome of working together.",
     name: "Champion name",
-    role: "Title, Seam",
+    role: "Title, seed to Series B B2B SaaS",
   },
   {
     quote:
       "Placeholder — testimonial pending. A short, specific quote about the outcome of working together.",
     name: "Champion name",
-    role: "Title, Ito.ai",
+    role: "Operator, seed to Series B B2B SaaS",
   },
   {
     quote:
       "Placeholder — testimonial pending. A short, specific quote about the outcome of working together.",
     name: "Champion name",
-    role: "Title, OpenLoop",
+    role: "Founder, seed to Series B B2B SaaS",
   },
 ];
 

@@ -1,9 +1,14 @@
 import Reveal from "./Reveal";
 
-// Companies Aaron has consulted for. Text-only strip — no logo soup.
-const CLIENTS = ["Seam", "Truemed", "Ito.ai", "OpenLoop"];
+// Names stay empty until each company grants permission to be shown.
+// An empty list hides the strip; the heading is kept for when logos are approved.
+const CLIENTS: string[] = [];
 
 export default function Clients() {
+  if (CLIENTS.length === 0) {
+    return null;
+  }
+
   return (
     <section className="px-6 sm:px-10">
       <Reveal>

@@ -23,9 +23,8 @@ export default function About() {
             <div className="flex max-w-2xl flex-col gap-5 text-base leading-relaxed text-[var(--color-muted)]">
               <p>
                 Placeholder — Promontory Group is led by Aaron Le, an operator
-                who has built revenue systems inside and alongside early-stage
-                B2B SaaS companies including Seam, Truemed, Ito.ai, and
-                OpenLoop.
+                who has built revenue systems inside and alongside seed to
+                Series B B2B SaaS teams.
               </p>
               <p>
                 Placeholder — career arc, in-house roles, and the path to
