@@ -38,6 +38,11 @@ html {
   scroll-behavior: smooth;
 }
 
+:focus-visible {
+  outline: 1px solid var(--color-foreground);
+  outline-offset: 3px;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);

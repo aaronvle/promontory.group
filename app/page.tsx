@@ -1,27 +1,19 @@
-import Hero from "./components/Hero";
-import Clients from "./components/Clients";
-import PointOfView from "./components/PointOfView";
-import Services from "./components/Services";
-import Work from "./components/Work";
-import Testimonials from "./components/Testimonials";
-import Process from "./components/Process";
-import About from "./components/About";
-import Faq from "./components/Faq";
-import Contact from "./components/Contact";
+import CtaBand from "./components/CtaBand";
+import LogoStrip from "./components/LogoStrip";
+import Hero from "./components/home/Hero";
+import Problem from "./components/home/Problem";
+import WaysToWork from "./components/home/WaysToWork";
+import WhatWeBuild from "./components/home/WhatWeBuild";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <>
       <Hero />
-      <Clients />
-      <PointOfView />
-      <Services />
-      <Work />
-      <Testimonials />
-      <Process />
-      <About />
-      <Faq />
-      <Contact />
-    </main>
+      <LogoStrip />
+      <Problem />
+      <WhatWeBuild />
+      <WaysToWork />
+      <CtaBand />
+    </>
   );
 }
