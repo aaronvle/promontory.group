@@ -4,7 +4,7 @@ import RegistrationMark from "../RegistrationMark";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100svh-7.5rem)] flex-col items-center justify-center px-6 py-20 text-center sm:px-10 sm:py-28">
+    <section className="relative flex min-h-[calc(100svh-7.5rem)] flex-col items-center justify-center overflow-hidden px-6 py-20 text-center sm:px-10 sm:py-28">
       <RegistrationMark />
       <div className="relative flex max-w-4xl flex-col items-center gap-8 animate-reveal">
         <h1
