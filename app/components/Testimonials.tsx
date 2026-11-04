@@ -1,56 +1,33 @@
-import Reveal from "./Reveal";
+type Testimonial = {
+  quote: string;
+  name: string;
+  role: string;
+};
 
-// PLACEHOLDER — quote slots. Do not ship real names with placeholder quotes; swap both together.
-const TESTIMONIALS = [
-  {
-    quote:
-      "Placeholder — testimonial pending. A short, specific quote about the outcome of working together.",
-    name: "Champion name",
-    role: "Title, seed to Series B B2B SaaS",
-  },
-  {
-    quote:
-      "Placeholder — testimonial pending. A short, specific quote about the outcome of working together.",
-    name: "Champion name",
-    role: "Operator, seed to Series B B2B SaaS",
-  },
-  {
-    quote:
-      "Placeholder — testimonial pending. A short, specific quote about the outcome of working together.",
-    name: "Champion name",
-    role: "Founder, seed to Series B B2B SaaS",
-  },
-];
+// Hidden until real quotes exist. Do not ship placeholder quotes.
+const TESTIMONIALS: Testimonial[] = [];
 
 export default function Testimonials() {
+  if (TESTIMONIALS.length === 0) return null;
+
   return (
-    <section className="px-6 py-20 sm:px-10 sm:py-28">
-      <div className="mx-auto max-w-5xl border-t border-[var(--color-foreground)]/15 pt-16">
-        <div className="grid gap-12 sm:grid-cols-3 sm:gap-8">
-          {TESTIMONIALS.map((t, i) => (
-            <Reveal key={t.role} delay={i * 100}>
-              <figure className="flex h-full flex-col gap-6">
-                <span
-                  className="font-[family-name:var(--font-display)] text-4xl leading-none text-[var(--color-foreground)]/20"
-                  aria-hidden="true"
-                >
-                  &ldquo;
-                </span>
-                <blockquote className="text-sm leading-relaxed text-[var(--color-muted)] italic">
-                  {t.quote}
-                </blockquote>
-                <figcaption className="mt-auto border-t border-[var(--color-foreground)]/10 pt-4">
-                  <p className="font-[family-name:var(--font-display)] text-sm font-bold">
-                    {t.name}
-                  </p>
-                  <p className="text-[11px] uppercase tracking-[0.2em] text-[var(--color-muted)]">
-                    {t.role}
-                  </p>
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </div>
+    <section className="px-6 py-20 sm:px-10 sm:py-28" aria-label="Testimonials">
+      <div className="mx-auto grid max-w-5xl gap-12 border-t border-[var(--color-foreground)]/15 pt-16 sm:grid-cols-3 sm:gap-8">
+        {TESTIMONIALS.map((testimonial) => (
+          <figure key={testimonial.name} className="flex h-full flex-col gap-6">
+            <blockquote className="text-sm leading-relaxed text-[var(--color-muted)] italic">
+              {testimonial.quote}
+            </blockquote>
+            <figcaption className="mt-auto border-t border-[var(--color-foreground)]/10 pt-4">
+              <p className="font-[family-name:var(--font-display)] text-sm font-bold">
+                {testimonial.name}
+              </p>
+              <p className="text-[11px] uppercase tracking-[0.2em] text-[var(--color-muted)]">
+                {testimonial.role}
+              </p>
+            </figcaption>
+          </figure>
+        ))}
       </div>
     </section>
   );
