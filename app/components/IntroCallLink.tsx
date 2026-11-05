@@ -7,7 +7,7 @@ const TEXT =
   "inline-flex items-center justify-center font-[family-name:var(--font-display)] text-[11px] uppercase tracking-[0.22em] text-[var(--color-muted)] underline-offset-4 transition-colors hover:text-[var(--color-foreground)] hover:underline";
 
 export default function IntroCallLink({
-  children = "Book an intro call",
+  children = "Book a call",
   variant = "solid",
   className = "",
 }: {

@@ -12,11 +12,16 @@ export default function Problem() {
     <section className="px-6 py-20 sm:px-10 sm:py-28">
       <div className="mx-auto max-w-5xl border-t border-[var(--color-foreground)]/15 pt-16 sm:pt-20">
         <Reveal>
+          <p className="max-w-2xl text-pretty text-base leading-relaxed text-[var(--color-muted)] sm:text-lg">
+            Promontory builds foundations for scale: senior RevOps judgment
+            and hands-on systems that hold as you grow, without the full-time
+            hire.
+          </p>
           <h2
-            className="max-w-3xl text-balance font-[family-name:var(--font-display)] font-bold leading-[1.08] tracking-tight"
+            className="mt-6 max-w-3xl text-balance font-[family-name:var(--font-display)] font-bold leading-[1.08] tracking-tight"
             style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)" }}
           >
-            Your pipeline runs on foundations nobody built on purpose.
+            Built for where you&apos;re going, not just where you are.
           </h2>
         </Reveal>
         <ul className="mt-12 border-t border-[var(--color-foreground)]/10">
@@ -29,12 +34,6 @@ export default function Problem() {
             </li>
           ))}
         </ul>
-        <Reveal>
-          <p className="mt-10 max-w-2xl text-pretty text-base leading-relaxed text-[var(--color-muted)] sm:text-lg">
-            Promontory fixes the foundations: senior RevOps judgment and
-            hands-on builds, without the full-time hire.
-          </p>
-        </Reveal>
       </div>
     </section>
   );

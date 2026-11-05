@@ -11,12 +11,10 @@ export default function Hero() {
           className="text-balance font-[family-name:var(--font-display)] font-bold leading-[1.02] tracking-tight"
           style={{ fontSize: "clamp(2.6rem, 7vw, 5.25rem)" }}
         >
-          RevOps and GTM engineering foundations for growing B2B teams.
+          Revenue foundations, built for scale.
         </h1>
         <p className="max-w-xl text-pretty text-base leading-relaxed text-[var(--color-muted)] sm:text-lg">
-          Promontory Group is a RevOps and GTM engineering advisory and
-          fractional agency. We build the systems, data, and processes behind
-          your pipeline, then help your team own them.
+          RevOps and GTM engineering for growing B2B teams, from CRM to Clay.
         </p>
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
           <IntroCallLink />
