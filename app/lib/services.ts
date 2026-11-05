@@ -1,72 +1,72 @@
-export type System = {
+export type Practice = {
   id: string;
   title: string;
   promise: string;
   includes: readonly string[];
-  tools: readonly string[];
+  tools?: readonly string[];
+  note?: string;
   example: string;
 };
 
-export const SYSTEMS: readonly System[] = [
+export const PRACTICES: readonly Practice[] = [
   {
-    id: "outbound",
-    title: "Signal-based outbound",
-    promise:
-      "TAM, ICP scoring, and triggers that put the right accounts in sequence at the right time.",
+    id: "revops",
+    title: "RevOps foundations",
+    promise: "A CRM, data model, and reporting your whole team trusts.",
     includes: [
-      "TAM build",
-      "ICP + lead scoring",
-      "Signal triggers for hiring, funding, job changes, product usage, and events",
-      "Sequences + CRM sync",
-    ],
-    tools: ["Clay", "Smartlead", "HeyReach", "Apollo"],
-    example:
-      "A scored TAM whose hiring and funding triggers place the right accounts into sequence and sync them back to the CRM.",
-  },
-  {
-    id: "enrichment",
-    title: "Enrichment & lead scoring",
-    promise:
-      "Every lead and account enriched and scored, including custom data you can't buy off the shelf.",
-    includes: [
-      "Waterfall enrichment",
-      "Scoring model",
-      "Custom data via APIs and scraping",
-    ],
-    tools: ["Clay", "APIs", "Apify"],
-    example:
-      "A waterfall that fills each lead and account, scores it, and writes custom fields back to the CRM.",
-  },
-  {
-    id: "inbound",
-    title: "Inbound automation",
-    promise:
-      "Enrich, score, route, and respond to inbound in minutes, not days.",
-    includes: [
-      "Form enrichment",
-      "Routing rules",
-      "Auto-responses",
-      "Rep alerts",
-    ],
-    tools: ["Clay", "HubSpot"],
-    example:
-      "A new form fill enriched, scored, routed to the right rep, and answered before the lead goes cold.",
-  },
-  {
-    id: "reporting",
-    title: "GTM reporting",
-    promise:
-      "A clean HubSpot data model and pipeline, conversion, and board reporting you can trust.",
-    includes: [
-      "Data model + lifecycle stages",
-      "Pipeline and conversion dashboards",
+      "CRM setup and cleanup in HubSpot or Salesforce",
+      "Lifecycle stages and pipeline definitions",
+      "Metric definitions",
+      "Pipeline and conversion reporting",
       "Board metrics",
     ],
-    tools: ["HubSpot"],
+    tools: ["HubSpot", "Salesforce"],
     example:
-      "Pipeline, conversion, and board views rebuilt on lifecycle stages the team actually uses.",
+      "A cleaned CRM with documented lifecycle stages and a board metrics dashboard.",
+  },
+  {
+    id: "gtm-engineering",
+    title: "GTM engineering",
+    promise:
+      "The data, signals, and automation that put the right accounts in front of your team at the right time.",
+    includes: [
+      "Enrichment",
+      "Signals for hiring, funding, job changes, product usage, and events",
+      "Scoring and routing",
+      "Outbound automation",
+      "Workflows and integrations",
+    ],
+    tools: ["Clay", "Smartlead", "HeyReach", "Apollo", "APIs"],
+    note: "Covers everything except custom-coded apps.",
+    example:
+      "A signal-triggered outbound system with scored accounts flowing into sequences and synced to the CRM.",
+  },
+  {
+    id: "leadership",
+    title: "Fractional leadership & advisory",
+    promise: "Senior RevOps leadership without the full-time hire.",
+    includes: [
+      "Fractional head of RevOps",
+      "GTM planning",
+      "Stack reviews",
+      "Roadmap and prioritization",
+    ],
+    example:
+      "A GTM plan and stack review with a prioritized 90-day roadmap.",
+  },
+  {
+    id: "mentorship",
+    title: "RevOps mentorship",
+    promise: "Grow your admin or junior RevOps people into leaders.",
+    includes: [
+      "1:1 coaching sessions",
+      "A skills plan built around their role and your stack",
+      "Reviews of their builds and decisions",
+      "Guidance on running RevOps as a function (prioritizing requests, working with sales and marketing leaders, reporting to the exec team)",
+    ],
+    example:
+      "A 3-month growth plan with recurring coaching and build reviews.",
   },
 ];
 
-export const SERVICES_FOOTNOTE =
-  "When no-code runs out, we write the code: Next.js, Supabase, and direct APIs.";
+export const PRACTICES_LINE = "Take one practice or combine them.";

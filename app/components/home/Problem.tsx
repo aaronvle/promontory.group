@@ -1,9 +1,10 @@
 import Reveal from "../Reveal";
 
 const BULLETS = [
-  "Your CRM data is half-empty and nobody trusts the dashboards.",
+  "Your CRM is messy, half-empty, and nobody trusts the dashboards.",
+  "Lifecycle stages and core metrics were never defined, so every team counts differently.",
   "Outbound is manual, or it's volume with no targeting.",
-  "Hiring, funding, job-change, and product signals are sitting unused.",
+  "There's no senior RevOps owner, or your admin and junior RevOps people need someone to guide them.",
 ];
 
 export default function Problem() {
@@ -15,7 +16,7 @@ export default function Problem() {
             className="max-w-3xl text-balance font-[family-name:var(--font-display)] font-bold leading-[1.08] tracking-tight"
             style={{ fontSize: "clamp(1.75rem, 4vw, 3rem)" }}
           >
-            You need a GTM engineer. You can&apos;t justify one yet.
+            Your pipeline runs on foundations nobody built on purpose.
           </h2>
         </Reveal>
         <ul className="mt-12 border-t border-[var(--color-foreground)]/10">
@@ -30,8 +31,8 @@ export default function Problem() {
         </ul>
         <Reveal>
           <p className="mt-10 max-w-2xl text-pretty text-base leading-relaxed text-[var(--color-muted)] sm:text-lg">
-            Promontory fills that gap: senior RevOps judgment and hands-on
-            builds, without the full-time hire.
+            Promontory fixes the foundations: senior RevOps judgment and
+            hands-on builds, without the full-time hire.
           </p>
         </Reveal>
       </div>

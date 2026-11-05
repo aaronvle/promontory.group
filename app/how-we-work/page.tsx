@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "How we work",
   description:
-    "Audits, build sprints, and a monthly retainer for seed to Series B B2B teams. Fixed fees for audits and sprints; flat monthly for retainers.",
+    "Audits, build sprints, and a monthly retainer for growing B2B teams. Fixed fees for audits and sprints; flat monthly for retainers.",
 };
 
 export default function HowWeWorkPage() {

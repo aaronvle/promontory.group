@@ -32,7 +32,7 @@ export const ENGAGEMENTS: readonly Engagement[] = [
     id: "retainer",
     title: "Retainer",
     summary:
-      "Monthly. We run and improve your GTM systems as your fractional GTM engineering team.",
+      "Monthly. We run and improve your GTM systems as your fractional RevOps and GTM engineering team.",
     note: "3-month minimum.",
     cta: "Talk retainer",
   },
@@ -64,7 +64,7 @@ export const FAQS = [
   {
     question: "Who is this for?",
     answer:
-      "Seed to Series B B2B teams without a RevOps or GTM engineer, sales-led or product-led adding sales.",
+      "Growing B2B teams that need solid RevOps and GTM engineering foundations: teams with no RevOps owner yet, teams with an admin or junior RevOps person who needs senior guidance, and teams whose leaders want an outside view on stack and plan. Sales-led or product-led adding sales.",
   },
   {
     question: "Do we need Clay or HubSpot already?",

@@ -26,7 +26,7 @@ export const LOGOS: Logo[] = [];
 export const LOGO_LINE = "From the people behind these logos";
 
 export const SITE_TITLE =
-  "Promontory Group | GTM Engineering for Early-Stage B2B";
+  "Promontory Group | RevOps and GTM Engineering Foundations for B2B";
 
 export const SITE_DESCRIPTION =
-  "Enrichment, signal-based outbound, inbound automation, and GTM reporting for seed to Series B B2B teams. Built in Clay, HubSpot, and code.";
+  "RevOps and GTM engineering advisory and fractional agency for growing B2B teams. CRM, data, outbound, and reporting foundations, plus fractional leadership and RevOps mentorship.";
