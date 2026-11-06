@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
+import SiteFooter from "./components/SiteFooter";
+import SiteHeader from "./components/SiteHeader";
+import { SITE_DESCRIPTION, SITE_TITLE } from "./lib/site";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -13,14 +16,18 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Promontory Group — GTM Advisory",
-  description:
-    "Strategic vantage for go-to-market. Promontory Group is a GTM consulting firm.",
+  metadataBase: new URL("https://promontory.group"),
+  title: {
+    default: SITE_TITLE,
+    template: "%s | Promontory Group",
+  },
+  description: SITE_DESCRIPTION,
   openGraph: {
-    title: "Promontory Group — GTM Advisory",
-    description: "Strategic vantage for go-to-market.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     type: "website",
     url: "https://promontory.group",
+    siteName: "Promontory Group",
   },
 };
 
@@ -34,7 +41,15 @@ export default function RootLayout({
       <body
         className={`${spaceGrotesk.variable} ${inter.variable} antialiased`}
       >
-        {children}
+        <a
+          href="#content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:bg-[var(--color-background)] focus:px-4 focus:py-2 focus:text-sm"
+        >
+          Skip to content
+        </a>
+        <SiteHeader />
+        <main id="content">{children}</main>
+        <SiteFooter />
       </body>
     </html>
   );
